@@ -16,3 +16,11 @@ for(let i = 0; i<items.length; i ++) {
     items[i] = items[i] - offer;
     console.log(items[i]);
 }
+
+// Problem-3: Create an array to store companies -. "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix" ; a. Remove the first company from the array, b. Remove the Uber and Add ola in its place, c.Add Amazon at the end.
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+companies.shift();
+companies.splice(2, 1, "Ola");
+companies.push("Amazon");
+console.log(companies);
